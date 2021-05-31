@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --svetloZelena: #86d4aa;
+    --srednjeZelena: #3db89c;
+    --tamnoZelena: #209677;
+    /*  rgb(32, 150, 119) */
+    --bela: #fff;
+    --svetloSiva: #f5f5f5;
+    --tamnoSiva: #555;
+    --transition: .3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--tamnoSiva);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.bg-light {
+    background: rgba(255, 255, 255, .8) !important;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: var(--svetloSiva);
+}
+
+
+/***header***/
+header {
+    background: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.logo {
+    width: 50%;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav-item .nav-link {
+    color: var(--tamnoZelena) !important;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-item .nav-link:hover {
+
+    background: var(--tamnoZelena);
+    color: var(--bela) !important;
+}
+
+/***mainHead***/
+.mainHead {
+    background: var(--srednjeZelena);
+    margin-top: -5%;
+}
+
+.mainHead p {
+    font-size: 1.2rem;
+}
+
+/***usluge***/
+.usluge .naslov h2::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 10px;
+    background: linear-gradient(to right, rgba(32, 150, 119, .2), rgba(32, 150, 119, .9));
+    margin: 20px auto;
+}
+
+.wrapper img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.wrapper {
+    border-radius: 5px;
+}
+
+/***bottomBar***/
+.bottomBar {
+    background: var(--srednjeZelena);
+}
+
+.bottomBar button {
+    border: none;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.bottomBar .icons i {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.bottomBar .icons i:hover {
+    transform: rotate(360deg);
+}
